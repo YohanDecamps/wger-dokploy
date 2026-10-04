@@ -55,7 +55,7 @@ services:
       - web
       - powersync
     ports:
-      8484:80
+      - "8484:80"
     volumes:
       - ./config/nginx.conf:/etc/nginx/conf.d/default.conf
       - static:/wger/static:ro
